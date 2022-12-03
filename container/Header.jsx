@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../constants";
 import bg from '../public/assets/bgIMG.png'
+import AppWrap from "../wrapper/AppWrap";
 
 const Header = () => {
   const scaleVariants = {
@@ -19,7 +20,7 @@ const Header = () => {
   const circleImages = [images.next, images.react, images.tailwind]
   return (
    
-    <div className="pt-32 bg-cover bg-repeat bg-center relative bg header flex items-center justify-center h-full w-full lg:flex-row lg:items-start flex-col" style={{
+    <div className="pt-32 bg-cover bg-repeat bg-center relative bg header flex items-center justify-center h-full w-full md:flex-row md:items-start flex-col" style={{
       backgroundImage: `url(${bg.src})`
     }}>
       <motion.div
@@ -47,7 +48,7 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className=" header-img flex-[1] h-full flex justify-end items-end relative"
       >
-        <img src={images.profile.src} alt="profile image" className="w-full object-contain z-[9] rounded-full " />
+        <img src={images.profile.src} alt="profile image" className="w-full object-contain z-[9] rounded-full md:rounded-none lg:rounded-full " />
         <motion.img
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
@@ -72,4 +73,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrap(Header,'home');
