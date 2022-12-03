@@ -34,6 +34,8 @@ import bolt from '../public/assets/bolt.png';
 import nb from '../public/assets/nb.png';
 import skype from '../public/assets/skype.png';
 import spotify from '../public/assets/spotify.png';
+import next from '../public/assets/next.webp';
+import tailwind from '../public/assets/tailwind.webp';
 
 export default {
   email,
@@ -69,4 +71,6 @@ export default {
   nb,
   skype,
   spotify,
+  next,
+  tailwind,
 };

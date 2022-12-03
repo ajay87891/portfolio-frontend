@@ -16,7 +16,7 @@ const Header = () => {
 
     }
   }
-  const circleImages = [images.flutter, images.sass, images.redux]
+  const circleImages = [images.next, images.react, images.tailwind]
   return (
    
     <div className="pt-32 bg-cover bg-repeat bg-center relative bg header flex items-center justify-center h-full w-full lg:flex-row lg:items-start flex-col" style={{
@@ -62,7 +62,7 @@ const Header = () => {
         className="app_header_circle flex-[0.75] flex md:flex-col justify-evenly items-start h-full ml-4"
       >
         {circleImages.map((circle,index)=>(
-          <div className={` flex items-center justify-center  rounded-full shadow-[0px_0px_20px_rgba(0,0,0,0.1)]  bg-white ${(index ===1)?"w-36 m-7 h-36":"w-24 h-24"}`} key={`circle-${index}`}>
+          <div className={` flex items-center justify-center  rounded-full shadow-[0px_0px_20px_rgba(0,0,0,0.1)]  bg-white ${(index ===1)?"md:w-36 m-7 w-24 h-24  md:h-36":"md:w-24 w-20 h-20 md:h-24"}`} key={`circle-${index}`}>
             <img src={circle.src} alt="circle" className="w-[60%] h-[60%]" />
           </div>
         ))}
