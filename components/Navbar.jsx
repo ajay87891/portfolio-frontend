@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {HiMenuAlt4, HiX} from 'react-icons/hi'
+import { HiX} from 'react-icons/hi'
 import { motion } from "framer-motion";
 import { images } from "../constants";
 import bg from '../public/bgWhite.png'
@@ -11,7 +11,7 @@ const Navbar = () => {
     
     <nav className="w-full flex justify-between items-center  bg-white/20 fixed top-0 backdrop-blur-sm px-10 z-10 py-4">
       <div className="flex justify-center items-center  ">
-        <img src={images.logo.src} alt="ksd" className="max-w-[150px]" />
+        <img src={images.logo.src} alt="ksd" className="max-w-[150px] 2xl:max-w-[220px]" />
       </div>
       <div className="hidden md:block ">
       <ul className="flex space-x-8 ">
@@ -20,7 +20,7 @@ const Navbar = () => {
             return (
               <li className="cursor-pointer flex flex-col group items-center" key={`link-${item}`}>
                 <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-sky-700" />
-                <a className="text-gray-500 font-medium font-Quicksand group-hover:text-sky-700 ease-in-out duration-500 transition-all uppercase" href={`#${item}`}>{item}</a>
+                <a className="text-gray-500 font-medium 2xl:text-2xl font-Quicksand group-hover:text-sky-700 ease-in-out duration-500 transition-all uppercase" href={`#${item}`}>{item}</a>
               
               </li>
             );
@@ -59,7 +59,7 @@ const Navbar = () => {
           (item) => {
             return (
               <li key={item}>
-                <a className="text-gray-500 text-xl cursor-pointer font-medium font-Quicksand hover:text-sky-700 ease-in-out duration-500 transition-all uppercase" href={`#${item}`} onClick={()=> setToggel(false)}>{item}</a>
+                <a className="text-gray-500 text-2xl cursor-pointer font-medium font-Quicksand hover:text-sky-700 ease-in-out duration-500 transition-all uppercase" href={`#${item}`} onClick={()=> setToggel(false)}>{item}</a>
               </li>
             );
           }
