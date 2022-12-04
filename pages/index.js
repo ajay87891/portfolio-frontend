@@ -1,11 +1,10 @@
 import { About,Footer, Header, Work, Testimonials, Skills } from "../container"
-import { Navbar } from "../Components"
+import { Navbar } from "../components"
 
 export default function Home() {
   return (
     <div className="bg-slate-200 ">
       <Navbar/>
-      
       <Header/>
       <About/>
       <Work/>
