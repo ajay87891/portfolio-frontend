@@ -1,5 +1,5 @@
 import { About,Footer, Header, Work, Testimonials, Skills } from "../container"
-import { Navbar } from "../component"
+import { Navbar } from "../components"
 
 export default function Home() {
   return (
