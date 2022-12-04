@@ -10,8 +10,8 @@ const Navbar = () => {
   return (
     
     <nav className="w-full flex justify-between items-center  bg-white/20 fixed top-0 backdrop-blur-sm px-10 z-10 py-4">
-      <div className="flex justify-center items-center max-w-[150px] ">
-        <img src={images.logo.src} alt="ksd" />
+      <div className="flex justify-center items-center  ">
+        <img src={images.logo.src} alt="ksd" className="max-w-[150px]" />
       </div>
       <div className="hidden md:block ">
       <ul className="flex space-x-8 ">

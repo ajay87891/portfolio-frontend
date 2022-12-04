@@ -21,8 +21,11 @@ const about = () => {
 
   return (
     <>
+    <a id='about' />
+    <div className='min-h-screen '>
+    
 
-      <h2 className='text-center md:text-4xl lg:text-6xl text-2xl'>I Know That <span className='text-sky-400'>Good Design</span>
+      <h2 className='text-center md:text-4xl lg:text-6xl text-2xl mt-24'>I Know That <span className='text-sky-400'>Good Design</span>
       <br/>
       Means <span className='text-sky-400'>Good Buisness</span>
       
@@ -50,6 +53,7 @@ const about = () => {
 
       }</div>
 
+    </div>
     </>
   )
 }
