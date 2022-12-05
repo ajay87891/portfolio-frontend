@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../constants";
 import bg from "../public/assets/bgIMG.png";
-import AppWrap from "../wrapper/AppWrap";
+import {AppWrap} from "../wrapper";
 import Typewriter from "typewriter-effect";
 
 const Header = () => {

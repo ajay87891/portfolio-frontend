@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react'
 import {motion} from 'framer-motion'
 import {images} from "../constants"
 import {urlFor, client} from '../constants/client'
+import {MotionWrap} from "../wrapper";
 
 const about = () => {
   const [abouts, setabouts] = useState([]);
@@ -21,8 +22,9 @@ const about = () => {
 
   return (
     <>
-    <a id='about' />
+    
     <div className='min-h-screen '>
+    
     
 
       <h2 className='text-center md:text-4xl lg:text-6xl text-2xl mt-24'>I Know That <span className='text-sky-400'>Good Design</span>
@@ -58,4 +60,4 @@ const about = () => {
   )
 }
 
-export default about
+export default MotionWrap(about, 'bg-white','about')
