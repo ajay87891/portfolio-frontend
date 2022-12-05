@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+
+import { urlFor, client } from "../constants/client";
+import {Contact} from "../components"
 
 const footer = () => {
   return (
-    <div>
+    <>
+    <a id="contact"/>
+    <div className="min-h-screen flex-1 w-full flex-col flex z-20  ">
       
-    </div>
+        <div className=" mt-24">
+      
+        </div>
+        <Contact/>
+
+        </div>
+      
+    </>
   )
 }
 

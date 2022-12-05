@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggel, setToggel] = useState(false);
   return (
     
-    <nav className="w-full flex justify-between items-center  bg-white/20 fixed top-0 backdrop-blur-sm px-10 z-10 py-4">
+    <nav className="w-full flex justify-between items-center  bg-white/20 fixed top-0 backdrop-blur-sm px-10 z-40 py-4">
       <div className="flex justify-center items-center  ">
         <img src={images.logo.src} alt="ksd" className="max-w-[150px] 2xl:max-w-[220px]" />
       </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
                 ></path>
               </svg></button>
         {
-          toggel ? (<motion.div className=" opacity-0 fixed z-20 top-0 bottom-0 right-0 p-4 w-[80%] h-[100vh] flex  flex-col  bg-sky-100 shadow-lg bg-cover bg-repeat "
+          toggel ? (<motion.div className=" opacity-0 fixed z-50 top-0 bottom-0 right-0 p-4 w-[80%] h-[100vh] flex  flex-col  bg-sky-100 shadow-lg bg-cover bg-repeat "
           style={{
             backgroundImage: `url(${bg.src})`
           }}

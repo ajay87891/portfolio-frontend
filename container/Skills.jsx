@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { urlFor, client } from "../constants/client";
 import ReactTooltip from "react-tooltip";
+
 import {MotionWrap} from "../wrapper";
+import { urlFor, client } from "../constants/client";
 
 const Skills = () => {
   const [experiences, setExperience] = useState([]);
@@ -12,7 +13,7 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
     client.fetch(query).then((data) => setExperience(data));
     client.fetch(skillsQuery).then((data) => {setSkills(data)});
-    console.log(skills);
+    
   }, []);
   return (
     <>
