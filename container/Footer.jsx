@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
-
-import { urlFor, client } from "../constants/client";
 import {Contact} from "../components"
 
 const footer = () => {

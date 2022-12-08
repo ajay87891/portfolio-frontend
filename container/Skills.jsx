@@ -25,12 +25,12 @@ const Skills = () => {
 
         <div className="app__Skills-container  mt-12 w-full flex-col">
           <motion.div className="app__skills-list flex-1 flex flex-wrap justify-center items-start mx-10  md:mx-20  ">
-            {skills.map((skill) => (
+            {skills.map((skill,index) => (
               <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5 }}
                 className="skills-item flex justify-center items-center flex-col m-4  text-center transition-all ease-linear duration-300 "
-                key={skill.name}
+                key={`${skill.name} + ${index}`}
               >
                 <div
                   className="flex justify-center items-center flex-col w-20 h-20 rounded-full  hover:shadow-[0px_0px_20px] hover:shadow-white bg-slate-100"
@@ -59,10 +59,7 @@ const Skills = () => {
 
                 {
                   experience.works.map((work)=>(
-
-                  
-
-                
+                       
               <>
               <motion.div
               whileInView={{ opacity: [0, 1] }}
@@ -75,7 +72,7 @@ const Skills = () => {
                 <h4 className="text-2xl font-bold">{work.name}</h4>
                 <p className=" font-semibold">{work.company}</p>
 
-              </motion.div>
+              
               <ReactTooltip
               id={work.time}
               effect="solid"
@@ -86,6 +83,7 @@ const Skills = () => {
               >
                 {work.description}
               </ReactTooltip>
+              </motion.div>
               </>
               ))
             }
