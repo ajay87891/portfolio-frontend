@@ -9,7 +9,7 @@ export default function Home() {
     <>
     <div>
     <Head>
-      <title>Ajay's Portfolio</title>
+      <title>Ajay&apos;s Portfolio</title>
     </Head>
 
     </div>
