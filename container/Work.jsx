@@ -39,7 +39,7 @@ const Work = () => {
           My Creative <span className="text-sky-400">Portfolio</span>
         </h2>
         <div className="app_work_filter flex justify-center items-center flex-wrap 2xl:space-x-6 space-x-3 mt-16 mb-8">
-          {["All", "UI/UX", "Web App", "Mobile App", "React JS" ].map(
+          {["All", "React JS", "Next JS" ].map(
             (item, index) => (
               <div
                 key={index}
