@@ -64,7 +64,7 @@ const Header = () => {
       <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className=" header-img flex-[1] h-full flex justify-end items-end relative"
+        className=" header-img flex-[0.6] h-full flex justify-end items-end relative"
       >
         <img
           src={images.profile.src}
