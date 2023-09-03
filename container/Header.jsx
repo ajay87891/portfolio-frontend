@@ -74,7 +74,7 @@ const Header = () => {
         <motion.img
           whileInView={{ opacity: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className=" overlay_circle  absolute left-0 right-0 bottom-0 w-full h-[90%]"
+          className=" overlay_circle  absolute left-0 right-0 bottom-0 w-full h-[80%]"
           src={images.circle.src}
           alt="profile-circle"
         />
